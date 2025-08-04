@@ -1,16 +1,29 @@
-# signature_maker
+# ✍️ Signature Pad Flutter App
 
-A new Flutter project.
+A lightweight and fast Flutter application that allows users to draw their signature using a finger, optionally name it, and save the output as a **small-size JPG** image **locally** to the gallery. Perfect for personal, offline use.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+| Initial UI                             | Signature with Name                       |
+|----------------------------------------|-------------------------------------------|
+| <img width="371" height="824" alt="Screenshot 2025-08-04 144605" src="https://github.com/user-attachments/assets/b81bc741-4b1d-4196-b80c-106b54fd6e44" /> | <img width="367" height="815" alt="Screenshot 2025-08-04 144632" src="https://github.com/user-attachments/assets/0beddfd0-434b-402c-9c9a-ed008b8d28bb" />|
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Features
+
+
+- 🎨 Draw signature with finger.
+- 💾 Save signature as **JPG in KBs** (compressed).
+- 📝 Optional filename input.
+- 🗂️ Stored directly in **Downloads** for easy access.
+- ✅ Runtime storage permission handling.
+- 📱 Responsive and clean UI.
+- 🧹 Clear button to reset canvas.
+
+---
+
+## 📁 Directory Structure
+
