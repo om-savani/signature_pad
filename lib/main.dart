@@ -1,18 +1,31 @@
+import 'dart:io';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:signature_maker/screens/signature/signature_screen.dart';
+import 'package:signature_maker/ios/screen/signature/sognature_screen_ios.dart';
+
+import 'android/screens/signature/signature_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SignatureScreen(),
-    );
+    if (Platform.isIOS) {
+      return CupertinoApp(
+        debugShowCheckedModeBanner: false,
+        home: SignatureScreeniOS(),
+      );
+    } else {
+      return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          useMaterial3: true,
+        ),
+        home: SignatureScreen(),
+      );
+    }
   }
 }
